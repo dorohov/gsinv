@@ -1,0 +1,111 @@
+.footer__{
+	&block{
+		@media print{display: none;}
+		//position: relative;
+		//z-index: 1;
+		font-family: @footer-ff;
+		font-size: @footer-fs;
+		line-height: @footer-lh;
+		font-weight: 400;
+		color: @footer-color;	
+		background: @footer-bg;
+		overflow: hidden;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		@media @media-point-screen { 
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		a,
+		a[href^="tel:"],
+		a[href^="maito:"],
+		a:focus,
+		a[href^="tel:"]:focus,
+		a[href^="maito:"]:focus,
+		a:hover,
+		a[href^="tel:"]:hover,
+		a[href^="maito:"]:hover{
+			color: @footer-color;
+		}
+	}
+	&container{
+		@media @media-point-device-lg {
+			width: 100%;
+		}
+	}
+	&row{
+		justify-content: space-between;
+		align-items: center;
+		margin-top: -15px;
+		@media @media-point-device{flex-wrap: wrap;}
+	}
+	&cols{
+		padding-top: 15px;
+		&.is--copyright{
+			@media @media-point-xxs {
+				.makeCols(12, 12);
+			}
+		}
+		&.is--tel{
+			@media @media-point-notsmart {
+				margin-left: auto;
+			}
+		}
+		&.is--email{
+			@media @media-point-notsmart {
+				margin-right: auto;
+			}
+		}
+	}
+	&copyright{
+		display: block;
+		font-weight: 700;
+		@media @media-point-screen {
+			font-size: @footer-fs + 4;
+			line-height: @footer-lh + 4;			
+		}
+		a&, a&:focus, a&:hover{
+			//color: @blue;
+		}
+	}
+	&dorohovdesign-row{
+		align-items: center;
+		margin-left: -5px;
+		margin-right: -5px;
+		justify-content: flex-end;
+		@media @media-point-device {
+			justify-content: center;
+			flex-wrap: wrap;
+		}  
+	}
+	&dorohovdesign-cols{
+		padding-left: 5px;
+		padding-right: 5px;
+		//@media @media-point-device {.makeCols(12, 12);}
+		&.is--text{
+			text-align: right;
+			@media @media-point-device-xl{
+			    display: none;
+			}
+		}
+	}
+	&dorohovdesign-text{   
+		margin-left: auto;
+		//color: @blue;
+		//letter-spacing: 1px;
+		//text-transform: uppercase;
+		//font-weight: 700;
+		//color: @blue-light;
+	}		
+	&dorohovdesign-logotip{	
+		border: none;
+		display: block;
+		width: 76px;
+		height: 22px;
+		@media @media-point-notsmart {
+			width: 100px;
+			height: 29px;			
+			margin:0 auto;
+		}	
+	}
+}

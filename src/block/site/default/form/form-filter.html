@@ -1,0 +1,65 @@
+<form action="#" class="{{form_prefix}}block  {{form_mod}}"  >
+	<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+	<input type="hidden" name="f[Форма: {{form_heading}}]">
+	<div class="{{form_prefix}}inner  {{form_mod}}"  >
+		<div class="row {{form_prefix}}row  {{form_mod}}  is--wrap">
+			<div class="cols {{form_prefix}}cols  {{form_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-radio-group.html"
+					form_id="{{form_id}}"
+					block_id="radio"
+					block_prefix="{{form_prefix}}"
+					block_mod="{{form_mod}}"
+					block_mod_elem="  "
+					block_color="{{form_color}}"
+					block_label="Количство комнат:"
+				]]
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--range">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-range.html"
+					form_id="{{form_id}}"
+					block_id="range-floor"
+					block_prefix="{{form_prefix}}"
+					block_mod="{{form_mod}}"
+					block_mod_elem="  "
+					block_color="{{form_color}}"
+					block_label="Этаж (от/до):"
+					block_type="double"
+					block_step=" 1"
+					block_min=" 1"
+					block_max="18"
+					block_from=" 4"
+					block_to="14"
+				]]
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--range">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-range.html"
+					form_id="{{form_id}}"
+					block_id="range-cost"
+					block_prefix="{{form_prefix}}"
+					block_mod="{{form_mod}}"
+					block_mod_elem="  "
+					block_color="{{form_color}}"
+					block_label="Стоимость, млн.₽:"
+					block_type="double"
+					block_step="0.2"
+					block_min="1.2"
+					block_from="1.8"
+					block_to="4.6"
+					block_max="5.2"
+				]]
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--btn">
+				[[azbntple 
+					tpl="/src/block/site/default/button/btn.html"
+					button_prefix="btn__" 
+					button_mod="{{form_btn_mod}}"
+					button_type="submit"
+					button_name="{{form_btn_name}}"
+				]]				
+			</div>
+		</div>	
+	</div> 
+</form> 

@@ -1,0 +1,50 @@
+<div class="{{block_prefix}}block  {{block_mod}}">	
+	<h2 class="{{block_prefix}}heading  is--sm  {{block_mod}}">
+		{{block_heading}}
+	</h2>
+	<div class="{{block_prefix}}heading-small  {{block_mod}}">
+		{{block_heading_small}}
+	</div>
+	<div class="{{block_prefix}}elem  is--status  {{block_mod}}">
+		<span class="azbn7__status  is--free">Свободна</span>
+	</div>
+	<div class="{{block_prefix}}elem-group  is--desc  {{block_mod}}">
+		<div class="{{block_prefix}}elem  is--card  {{block_mod}}">
+			Площадь: <span>78 м<sup>2</sup></span>
+		</div>
+		<div class="{{block_prefix}}elem  is--card  {{block_mod}}">
+			Этаж: <span>5</span>
+		</div>
+		<div class="{{block_prefix}}elem  is--card  {{block_mod}}">
+			№ квартиры: <span>1</span>
+		</div>
+	</div>
+	<div class="{{block_prefix}}elem-group  is--cost  {{block_mod}}">
+		<div class="{{block_prefix}}elem  is--cost-sm  {{block_mod}}">
+			от 36 000 ₽/м<sup>2</sup>
+		</div>
+		<div class="{{block_prefix}}elem  is--cost  {{block_mod}}">
+			от 1 345 800 ₽
+		</div>
+	</div>
+	<div class="{{block_prefix}}elem-group  is--btn  {{block_mod}}">
+		<div class="{{block_prefix}}elem  {{block_mod}}">
+			[[azbntple 
+				tpl="/src/block/site/default/button/btn-modal.html"
+				button_prefix="btn__" 
+				button_mod="  "
+				button_target="modal-cost"
+				button_name="Рассчитать стоимость"
+			]]
+		</div>
+		<div class="{{block_prefix}}elem  is--btn-sm  {{block_mod}}">
+			[[azbntple 
+				tpl="/src/block/site/default/button/link.html"
+				button_prefix="btn-link__" 
+				button_mod="  "
+				button_link="{{page.building_card}}"
+				button_name="Посмотреть дом" 
+			]]
+		</div>
+	</div>
+</div>

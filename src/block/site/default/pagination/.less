@@ -1,0 +1,133 @@
+.pagination-panel__{
+	&block{
+		padding-bottom: 30px;
+		/*padding-top: 30px;
+		padding-bottom: 30px;
+		@media @media-screen {
+			padding-top: 2.6vw;
+			padding-bottom: 2.6vw;
+		}*/
+	}
+	&list{
+		font-weight: 400;
+		list-style: none;
+		margin-top: -(@pagin-gutter + 5px);
+		margin-left: -(@pagin-gutter);
+		margin-right: -(@pagin-gutter);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		//
+		&.is--center{
+			justify-content: center; 
+		}
+	}
+	&item{
+		padding-top: @pagin-gutter + 5px;
+		padding-left: @pagin-gutter;
+		padding-right: @pagin-gutter; 
+	}
+	&link{
+		display: block;
+		position: relative;
+		z-index: 1;
+		color: @pagin-color;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		padding: 0 8px;
+		font-size: @b-fs - 2;
+		line-height: @b-lh + 12;
+		width: 36px;
+		&::before,
+		&::after,
+		span::before,
+		span::after{
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			width: 25%;
+			height: 100%;
+			transform: scale(1, 0);
+			transform-origin: bottom;
+			background-color: @pagin-bg-hover;	
+			transition: @trs-site;
+		}
+		&::before{
+			left: 0;
+		}
+		&::after{
+			left: 25%;
+			transition-delay: 0.1s;
+		}
+		span::before{
+			left: 50%;
+			transition-delay: 0.2s;
+		}
+		span::after{
+			left: 75%;
+			transition-delay: 0.3s;
+		}
+		&:hover{	
+			color: @pagin-color-hover;			
+			//background-color: @pagin-bg-hover;			
+			&::before,
+			&::after,
+			span::before,
+			span::after{
+				transform: scale(1, 1);
+			}
+		}
+		/*&.is--nav{
+			display: block;
+			position: relative;
+			width: 36px;
+			height: 36px;
+			border: 2px solid @blue-light;
+			text-transform: uppercase;
+			margin: 0 4px;
+			padding: 8px 0;
+			color: @b-color-a;
+
+			svg{display: block;}
+			&:hover{
+				background: @blue-light;
+				color: @white;			
+			}
+		}
+		&.is--prev{
+			margin-right: 15px;
+		}
+		&.is--next{			
+			margin-left: 15px;
+		}*/
+		.pagination-panel__item.is--active &{
+			color: @pagin-color-active;		
+			cursor: default;			
+			&::before,
+			&::after,
+			span::before,
+			span::after{
+				transform: scale(1, 1);
+				background-color: @pagin-bg-active;
+			}
+		}
+	}
+	&icon{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		svg{display: block;}
+	}
+	/*&line{
+		max-width: 60px;
+		min-width: 20px;
+		width: 4vw;
+		height: 1px;
+		background-color: @b-color-h;
+	}*/
+}

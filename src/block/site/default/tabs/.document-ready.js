@@ -1,0 +1,1 @@
+$('.tabs__block.dropdown').closest('body').addClass('is--navbar-bottom'); 

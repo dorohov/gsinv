@@ -1,0 +1,86 @@
+[[azbntple 
+	tpl="/src/block/site/default/page-header/block.html"
+	block_prefix="page-header__" 
+	block_mod="{{block_heading_mod}}"
+	block_heading_level="{{block_heading_level}}"
+	block_heading="{{block_heading}}"
+	block_bread_mod="{{block_bread_mod}}"
+	block_heading_bg="{{block_heading_bg}}"
+]]	
+<main class="{{content_prefix}}panel  {{content_mod}}">
+	<div class="{{content_prefix}}container container  is--full">
+		<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
+			<div class="{{content_prefix}}cols cols  {{content_mod}}  is--filter">
+				[[azbntple 
+					tpl="/src/block/site/default/form/panel-filter.html" 
+					block_prefix="form-panel__"
+					block_mod="is--filter"
+					form_prefix="form__"
+					form_id="f_filter"
+					form_mod="is--filter" 
+					form_color="  "
+					form_heading="Выберите параметры квартиры"
+					form_heading_small="  "
+					form_btn_name="Показать результат"
+					form_btn_mod="  "
+				]]
+			</div>
+			<div class="{{content_prefix}}cols cols  {{content_mod}}  is--list">
+				<h2 class="{{content_prefix}}heading  {{content_mod}}">Результаты поиска по параметрам</h2>
+				<div class="{{content_prefix}}row row  is--gutter20  is--wrap  {{content_mod}}">
+					<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-1">
+						[[azbntple 
+							tpl="/src/block/site/default/card/card-apartment.html"
+							block_prefix="card-item__" 
+							block_mod="is--apartment-card"
+							block_link="{{page.building_layout_apart}}"
+							block_preview="{{url-path-img}}/temp/bg-layout-apart.png"
+							block_heading="Родзевича-Белевича, поз. 1"
+							block_heading_small="Трехкомнатная квартира"
+							block_area="38.50 м<sup>2</sup>"
+							block_floor="8 "
+							block_number="98"
+							block_cost="1 345 800"
+						]]
+					</div>
+					<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-1">
+						[[azbntple 
+							tpl="/src/block/site/default/card/card-apartment.html"
+							block_prefix="card-item__" 
+							block_mod="is--apartment-card"
+							block_link="{{page.building_layout_apart}}"
+							block_preview="{{url-path-img}}/temp/bg-layout-apart-1.png"
+							block_heading="Родзевича-Белевича, поз. 1"
+							block_heading_small="Трехкомнатная квартира"
+							block_area="38.50 м<sup>2</sup>"
+							block_floor="8 "
+							block_number="98"
+							block_cost="1 345 800"
+						]]
+					</div>
+					<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-1">
+						[[azbntple 
+							tpl="/src/block/site/default/card/card-apartment.html"
+							block_prefix="card-item__" 
+							block_mod="is--apartment-card"
+							block_link="{{page.building_layout_apart}}"
+							block_preview="http://via.placeholder.com/150x200"
+							block_heading="Родзевича-Белевича, поз. 1"
+							block_heading_small="Трехкомнатная квартира"
+							block_area="38.50 м<sup>2</sup>"
+							block_floor="8 "
+							block_number="98"
+							block_cost="1 345 800"
+						]]
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	[[azbntple 
+		tpl="/src/block/site/default/bg/card.html"
+		block_prefix="bg-block__" 
+		block_mod="is--bg-left-bottom-586x346"
+		block_bg="bg-left-bottom-586x346.png"
+	]]
+</main>

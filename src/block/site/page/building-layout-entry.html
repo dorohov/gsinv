@@ -1,0 +1,53 @@
+[[azbntple 
+	tpl="/src/block/site/default/page-header/block-level3.html"
+	block_prefix="page-header__" 
+	block_mod="{{block_heading_mod}}"
+	block_heading_level="{{block_heading_level}}"
+	block_heading="{{block_heading}}"
+	block_bread_mod="{{block_bread_mod}}"
+	block_bread_level_1="{{block_bread_level_1}}"
+	block_bread_level_1_link="{{block_bread_level_1_link}}"
+	block_bread_level_2="{{block_bread_level_2}}"
+	block_bread_level_2_link="{{block_bread_level_2_link}}"
+	block_bread_level_3="{{block_bread_level_3}}"
+	block_bread_level_3_link="{{block_bread_level_3_link}}"
+	block_bread_level_4="{{block_bread_level_4}}"
+	block_heading_bg="{{block_heading_bg}}"
+]]	
+<main class="{{content_prefix}}panel">
+	[[azbntple 
+		tpl="/src/block/site/default/tabs/panel-building.html"
+		block_prefix="tabs__" 
+		block_mod="  "
+	]]
+	<div class="{{content_prefix}}container container  is--full-building">
+		<div class="{{content_prefix}}elem  azbn7__layouts-content" data-base-url="{{page.building_layout_floor}}?floor_id=" data-status="0">
+			<div class="{{content_prefix}}row row  is--gutter  is--wrap">
+				<div class="{{content_prefix}}cols cols  is--plan  {{content_mod}}">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-building-entry.html"
+						block_prefix="card-item__" 
+						block_mod="is--building-layout"
+						block_preview="{{url-path-img}}/temp/bg-layout-entry.png"
+						block_link="{{page.building_layout_floor}}"
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  is--note  {{content_mod}}">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-building-entry-info.html"
+						block_prefix="card-item__" 
+						block_mod="is--building-layout-info"
+						block_heading="Выберите этаж"
+						block_link="{{page.building_layout_floor}}"
+					]]
+				</div>
+			</div>
+		</div>
+	</div>
+	[[azbntple 
+		tpl="/src/block/site/default/bg/card.html"
+		block_prefix="bg-block__" 
+		block_mod="is--bg-right-bottom-586x346"
+		block_bg="bg-right-bottom-586x346.png"
+	]]
+</main> 

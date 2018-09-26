@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		<meta charset="utf-8">	
+<title>  | gsinv.ru</title>
+<meta name="description" content=" "/>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#0460a2">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+<meta name="apple-mobile-web-app-title" content="gsinv.ru">
+<meta name="application-name" content="gsinv.ru">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<link href="/css/site.css" rel="stylesheet"> 		
+	</head>
+	<body> 
+		<nav class="navbar__block  is--scroll">
+	<div class="navbar__inner">
+		<div class="container navbar__container">
+			<div class="navbar__header">
+				<div class="row navbar__row-header ">
+					<div class="cols navbar__cols-header  is--hamburger">
+						<div class="navbar__hamburger">
+							<button class="navbar__hamburger-card" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+								<span class="navbar__hamburger-card-inner">
+									<span class="navbar__hamburger-card-line  is--left"></span>
+									<span class="navbar__hamburger-card-line  is--center"></span>
+									<span class="navbar__hamburger-card-line  is--right"></span>
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="cols navbar__cols-header  is--brand">
+						<a class="navbar__brand  {{navbar_scrollto}}" href="/">
+							<svg class="icon-svg icon-logotip" role="img">
+	<use xlink:href="/img/svg/sprite.svg#logotip"></use>
+</svg>
+						</a>
+					</div>
+					<div class="cols navbar__cols-header  is--tel">
+						<a href="tel:+74862721412" class="navbar__tel  is--icon"><svg class="icon-svg icon-contacts-tel" role="img">
+	<use xlink:href="/img/svg/sprite.svg#contacts-tel"></use>
+</svg></a>
+					</div>
+				</div>
+			</div>
+				
+			<div class="navbar__collapse" >
+				<div class="navbar__collapse-inner">	
+					<div class="row navbar__collapse-row">
+						<div class="cols navbar__collapse-cols cols  is--left">
+							<a class="navbar__brand" href="/">
+								<svg class="icon-svg icon-logotip" role="img">
+	<use xlink:href="/img/svg/sprite.svg#logotip"></use>
+</svg>
+							</a> 
+						</div>
+						<div class="cols navbar__collapse-cols cols  is--center">
+							<ul class="navbar__nav">
+								<li class="navbar__nav-item  is--index">
+	<a href="/" class="navbar__nav-link"><span>Главная</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/about.html" class="navbar__nav-link"><span>О компании</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/building.html" class="navbar__nav-link"><span>Продажа квартир</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/objacts.html" class="navbar__nav-link"><span>Наши объекты</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/mortgage.html" class="navbar__nav-link"><span>Ипотека</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/info.html" class="navbar__nav-link"><span>Информация для клиентов</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/contacts.html" class="navbar__nav-link"><span>Контакты</span></a>  
+</li>	
+							</ul>							
+						</div>
+						<div class="cols navbar__collapse-cols cols  is--right-center">
+							<a href="tel:+74862721412" class="navbar__tel">
+								+7 (4862) 72-14-12
+							</a>
+						</div>
+						<div class="cols navbar__collapse-cols cols  is--right">							
+							<a href="/apartment.html" class="btn__item  is--navbar  is--xs">
+	<span class="btn__name">Выбрать квартиру</span>
+</a>  
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav> 
+		<div class="page-header__block  is--page-heading" style="background-image: url(/img/temp/bg-objacts.jpg)">				
+	<div class="page-header__container  container  is--page-heading">				
+		<div class="page-header__panel  is--page-heading">				
+			<div class="breadcrumb__block    ">
+	<ul class="breadcrumb__list    ">
+		<li class="breadcrumb__list-item">
+			<a href="/" class="breadcrumb__list-link">Главная</a>
+		</li>
+		<li class="breadcrumb__list-item is--active">
+			<span class="breadcrumb__list-link">Наши объекты</span>
+		</li>
+	</ul>
+</div>		
+			<div class="page-header__group  is--page-heading">
+	<h1  class="page-header__heading  is--page-heading">Наши объекты</h1>		
+</div>
+		</div>
+	</div>
+</div> 	
+<main class="content-block__panel  is--objacts">
+	<div class="content-block__map  is--objacts" id="map-google"></div>
+	<div class="content-block__map-filter  is--objacts">
+		<div class="content-block__map-filter-elem  is--objacts">
+			<a href="##" class="btn-filter__item  is--active  is--all  azbn-map-filter-btn"  data-status-filter=" 0"  data-status-onsale-filter="  ">
+	<span class="btn-filter__icon  is--active  is--all"><svg class="icon-svg icon-icon-objacts" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-objacts"></use>
+</svg></span>
+	<span class="btn-filter__name">Все объекты</span>
+</a>  
+		</div>
+		<div class="content-block__map-filter-elem  is--objacts">
+			<a href="##" class="btn-filter__item  is--sale  azbn-map-filter-btn"  data-status-filter=" 1"  data-status-onsale-filter="  3">
+	<span class="btn-filter__icon  is--sale"><svg class="icon-svg icon-icon-objacts" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-objacts"></use>
+</svg></span>
+	<span class="btn-filter__name">В продаже</span>
+</a>  
+		</div>
+		<div class="content-block__map-filter-elem  is--objacts">
+			<a href="##" class="btn-filter__item  is--finish  azbn-map-filter-btn"  data-status-filter=" 1"  data-status-onsale-filter="  ">
+	<span class="btn-filter__icon  is--finish"><svg class="icon-svg icon-icon-objacts" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-objacts"></use>
+</svg></span>
+	<span class="btn-filter__name">Сданные в эксплуатацию</span>
+</a>  
+		</div>
+	</div>
+</main>
+		<footer class="footer__block">	
+	<div class="footer__inner">	
+		<div class="container footer__container">
+			<div class="row footer__row  is--base">
+				<div class="cols footer__cols  is--copyright">
+					<div class="footer__copyright">
+						ООО «ЖИЛСТРОЙ-Инвест»
+					</div>
+				</div>					
+				<div class="footer__cols cols  is--footer  is--tel">
+	<a href="tel:+74862721412" class="social-contacts__item   is--footer">
+		<span class="social-contacts__item-icon  is--footer"><svg class="icon-svg icon-contacts-tel" role="img">
+	<use xlink:href="/img/svg/sprite.svg#contacts-tel"></use>
+</svg></span>
+		<span class="social-contacts__item-name  is--footer">+7 (4862) 72-14-12</span>
+	</a>
+</div>
+<div class="footer__cols cols  is--footer  is--email">
+	<a href="mailto:mail@gsinv.ru" class="social-contacts__item   is--footer">
+		<span class="social-contacts__item-icon  is--footer"><svg class="icon-svg icon-contacts-email" role="img">
+	<use xlink:href="/img/svg/sprite.svg#contacts-email"></use>
+</svg></span>
+		<span class="social-contacts__item-name  is--footer">mail@gsinv.ru</span>
+	</a>
+</div>
+				<div class="cols footer__cols  is--dorohovdesign">
+					<div class="row footer__dorohovdesign-row"> 
+						<div class="cols footer__dorohovdesign-cols  is--text">
+							<div class="footer__dorohovdesign-text">Создание сайта</div>
+						</div>
+						<div class="cols footer__dorohovdesign-cols  is--logotip">
+							<a href="http://dorohovdesign.ru/" target="_blank" class="footer__dorohovdesign-logotip">
+								<svg class="icon-svg icon-dorohovdesign" role="img">
+	<use xlink:href="/img/svg/sprite.svg#dorohovdesign"></use>
+</svg>
+							</a>
+						</div>
+					</div>				 
+				</div>
+			</div>	
+		</div>
+	</div>
+</footer>
+		<div class="modal__block  fade    " id="modal-message" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog    ">
+		<div class="modal__body    " >
+			<button type="button" class="modal__btn-close  modal-close" data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-modal-close" role="img">
+	<use xlink:href="/img/svg/sprite.svg#modal-close"></use>
+</svg>
+			</button>
+			<div class="modal__content    ">
+				<div class="page-header__group  is--modals">
+	<h4 class="page-header__heading  is--modals"><span>Ваше сообщение успешно отправлено!</span></h4>	
+	<div class="page-header__heading-small  is--modals">Мы свяжемся с вами в ближайшее время.</div>		
+</div>
+			</div> 
+		</div>
+	</div>
+</div>
+<div class="modal__block  fade    " id="modal-cost" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog    ">
+		<div class="modal__body    " >
+			<button type="button" class="modal__btn-close  modal-close" data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-modal-close" role="img">
+	<use xlink:href="/img/svg/sprite.svg#modal-close"></use>
+</svg>
+			</button>
+			<div class="modal__content    ">
+				<div class="form-panel__panel    ">
+	<div class="form-panel__panel-inner    ">
+		<div class="page-header__group  is--modals">
+	<h3 class="page-header__heading  is--modals"><span>Рассчитать стоимость</span></h3>	
+	<div class="page-header__heading-small  is--modals">Мы перезвоним вам в ближайшее время</div>		
+</div>
+		<form action="#" class="form__block    "  >
+	<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+	<input type="hidden" name="f[Форма: Рассчитать стоимость]">
+	<div class="form__inner    "  >
+		<div class="row form__row  is--wrap    ">
+			<div class="cols form__cols      is--name">
+				<div class="form__item      is--name  is--input">
+	<label for="fsord[name]" class="form__label          is--name  is--input">Имя</label>
+	<input type="text"     class="form__control form-control validate[required, custom[onlyLetterSp]]          is--name  is--input" id="fsord[name]" name="f[Имя]"  >
+	<label for="fsord[name]" class="form__icon      is--name  is--input">
+		<svg class="icon-svg icon-form-name" role="img">
+	<use xlink:href="/img/svg/sprite.svg#form-name"></use>
+</svg>
+	</label>
+</div>
+			</div>
+			<div class="cols form__cols      is--tel">
+				<div class="form__item      is--tel  is--input">
+	<label for="fsord[tel]" class="form__label          is--tel  is--input">Телефон</label>
+	<input type="tel"     class="form__control form-control validate[required, custom[phone]]          is--tel  is--input" id="fsord[tel]" name="f[Телефон]"  >
+	<label for="fsord[tel]" class="form__icon      is--tel  is--input">
+		<svg class="icon-svg icon-form-tel" role="img">
+	<use xlink:href="/img/svg/sprite.svg#form-tel"></use>
+</svg>
+	</label>
+</div>
+			</div>
+			<div class="cols form__cols      is--btn">
+				<button type="submit" class="btn__item    ">
+	<span class="btn__name">Отправить заявку</span>
+</button>				
+			</div>
+			<div class="cols form__cols      is--agreement">
+				<div class="form__item  is--agreement        ">
+	<input type="hidden" name="f[Согласие на обработку персональных данных]" value="Да">
+	<div class="form__text        ">		
+		Нажимая на кнопку «Отправить заявку» вы соглашаетесть с правилами обработки <a href='/agreement.html' target='_blank'>персональных данных</a>
+	</div>	
+</div>	
+			</div>
+		</div>	
+	</div> 
+</form> 
+	</div>
+</div> 
+			</div> 
+		</div>
+	</div>
+</div>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="/js/jquery-3.2.1.min.js" ></script>
+<script src="/js/document-ready.js" ></script>
+<script src="/js/svg4everybody.min.js" ></script>
+<script>
+svg4everybody();
+document.createElement("picture");
+</script> 
+		<script>
+var CMS__TPL_PATH = '/gsinv';
+var SiteData = {
+	projects : {
+		residential : {
+			1: {
+				id : '1',
+				link : CMS__TPL_PATH+'/building-layout.html',
+				title : 'пер. Рижский, поз. 1',
+				lat : parseFloat('52.929752'),
+				lng : parseFloat('36.033916'),
+				status : '1',
+				status_onsale : '1',
+				marker : null,
+				infowindow : null
+			},
+			2: {
+				id : '2',
+				link : CMS__TPL_PATH+'/building-layout.html',
+				title : 'ул. Родзевича-Белевича, поз. 1, 1 этап',
+				lat : parseFloat('53.018329'),
+				lng : parseFloat('36.128150'),
+				status : '2',
+				status_onsale : '1',
+				marker : null,
+				infowindow : null
+			},
+			3: {
+				id : '3',
+				link : CMS__TPL_PATH+'/building-layout.html',
+				title : 'ул. Весёлая, дом 6',
+				lat : parseFloat('52.971189'),
+				lng : parseFloat('36.038395'),
+				status : '2',
+				status_onsale : '1',
+				marker : null,
+				infowindow : null
+			},
+			4: {
+				id : '4',
+				link : CMS__TPL_PATH+'/building-layout.html',
+				title : 'ул. Родзевича-Белевича, поз. 1, 2 этап',
+				lat : parseFloat('53.018525'),
+				lng : parseFloat('36.127804'),
+				status : '1',
+				status_onsale : '1',
+				marker : null,
+				infowindow : null
+			},
+			5: {
+				id : '5',
+				link : CMS__TPL_PATH+'/building-layout.html',
+				title : 'ул. Родзевича-Белевича, поз. 2',
+				lat : parseFloat('53.017480'),
+				lng : parseFloat('36.126930'),
+				status : '1',
+				status_onsale : '1',
+				marker : null,
+				infowindow : null
+			},
+			6: {
+				id : '6',
+				link : CMS__TPL_PATH+'/building-layout.html',
+				title : 'ул. Гагарина, 73',
+				lat : parseFloat('52.953124'),
+				lng : parseFloat('36.075007'),
+				status : '2',
+				status_onsale : '',
+				marker : null,
+				infowindow : null
+			},
+					
+		}
+	},
+	infowindows : [],
+	/*
+	markers : {
+		residential : [],
+		commercial : [],
+	},
+	*/
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=omap__initMap" async defer ></script> 
+<script>
+var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';
+var CMS__TPL_PATH = '/gsinv';
+var omap__map, omap__mapElement;
+
+var icons = {
+	1 : CMS__TPL_PATH+'/img/default/objacts-sale.png',
+	2 : CMS__TPL_PATH+'/img/default/objacts-finish.png',
+	3 : CMS__TPL_PATH+'/img/default/objacts-sale.png',
+};
+
+function in_array(value, array) {
+	for(var i = 0; i < array.length; i++) {
+		if(array[i] == parseInt(value)) return true;
+	}
+	return false;
+}
+
+var azbn_p = 'azbn.';
+
+var SS = {
+	set : function(id,value) {sessionStorage.setItem(azbn_p + id, value);},
+	get : function(id) {var item = sessionStorage.getItem(azbn_p + id);if(typeof item !== 'undefined' && item != null) {return item;} else {return null;}},
+	remove : function(id) {sessionStorage.removeItem(azbn_p + id);},
+	clear : function() {sessionStorage.clear();},
+	obj2s : function(id,obj2save) {this.set(id, JSON.stringify(obj2save));},
+	s2obj : function(id) {var item = this.get(id);if(typeof item !== 'undefined' && item != null) {return JSON.parse(item);} else {return null;}},
+};
+
+function omap__objectsByStatus(status_arr, status_onsale) {
+	
+	if(status_onsale) {
+		
+		for(var i in SiteData.projects.residential) {
+			
+			if(SiteData.projects.residential[i].marker && parseInt(SiteData.projects.residential[i].status_onsale)) {
+				
+				SiteData.projects.residential[i].marker.setMap(omap__map);
+				SiteData.projects.residential[i].marker.setIcon(icons[3]);
+				
+			} else if(SiteData.projects.residential[i].marker) {
+				
+				SiteData.projects.residential[i].marker.setMap(null);
+				
+			}
+			
+		}
+		
+		for(var i in SiteData.projects.commercial) {
+			
+			if(SiteData.projects.commercial[i].marker) {
+				
+				SiteData.projects.commercial[i].marker.setMap(null);
+				
+			}
+			
+		}
+		
+	} else if(!in_array(0, status_arr)) {
+		
+		for(var i in SiteData.projects.residential) {
+			
+			if(SiteData.projects.residential[i].marker && in_array(SiteData.projects.residential[i].status, status_arr)) {
+				
+				SiteData.projects.residential[i].marker.setMap(omap__map);
+				SiteData.projects.residential[i].marker.setIcon(icons[SiteData.projects.residential[i].status]);
+				
+			} else if(SiteData.projects.residential[i].marker) {
+				
+				SiteData.projects.residential[i].marker.setMap(null);
+				
+			}
+			
+		}
+		
+		for(var i in SiteData.projects.commercial) {
+			
+			if(SiteData.projects.commercial[i].marker && in_array(SiteData.projects.commercial[i].status, status_arr)) {
+				
+				SiteData.projects.commercial[i].marker.setMap(omap__map);
+				SiteData.projects.commercial[i].marker.setIcon(icons[SiteData.projects.commercial[i].status]);
+				
+			} else if(SiteData.projects.commercial[i].marker) {
+				
+				SiteData.projects.commercial[i].marker.setMap(null);
+				
+			}
+			
+		}
+		
+	} else {
+		
+		for(var i in SiteData.projects.residential) {
+			
+			if(SiteData.projects.residential[i].marker) {
+				
+				SiteData.projects.residential[i].marker.setMap(omap__map);
+				SiteData.projects.residential[i].marker.setIcon(icons[SiteData.projects.residential[i].status]);
+				
+			}
+			
+		}
+		
+		for(var i in SiteData.projects.commercial) {
+			
+			if(SiteData.projects.commercial[i].marker) {
+				
+				SiteData.projects.commercial[i].marker.setMap(omap__map);
+				SiteData.projects.commercial[i].marker.setIcon(icons[SiteData.projects.commercial[i].status]);
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+function omap__initMap() {
+	
+	var center = {
+		lat : 52.974166,
+		lng : 36.055625,
+	},
+	zoom_map = 12,
+	mapOptions = {
+		zoom : zoom_map,
+		center : new google.maps.LatLng(center.lat, center.lng),
+		scrollwheel : false,	
+		/*styles : [{"elementType":"geometry","stylers":[{"color":"#eaeaea"}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#f5f5f5"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.fill","stylers":[{"color":"#424242"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"color":"#c1c1c1"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#424242"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c4c4c4"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#424242"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#424242"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#dadada"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#424242"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#424242"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#b8d8e7"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#424242"}]}]	 */
+	};
+	
+	omap__mapElement = document.getElementById('map-google');
+	
+	omap__map = new google.maps.Map(omap__mapElement, mapOptions);
+	
+	
+	var getInfoWindowHTML = function(point) {
+		
+		var container = $('<div/>', {
+			'class' : 'content-block__gmap-popover',
+		});
+		
+		var title = $('<div/>', {
+			'class' : 'content-block__gmap-heading',
+			'html' : point.title,
+		}).appendTo(container);
+				
+		var a_link = $('<div/>', {
+			'class' : 'content-block__gmap-btn',
+			'html' : '<a href="'+point.link+'" class="btn-link__item"><span class="btn-link__name">Подробнее</span></a>',
+		}).appendTo(container);
+		
+		return container.get(0).outerHTML;	
+	}
+	var addMarkerToMap = function(point, to) {
+		
+		setTimeout(function() {
+			
+			point.marker = new google.maps.Marker({
+				position : {
+					lat : point.lat,
+					lng : point.lng,
+				},
+				map : omap__map,
+				icon : icons[point.status],
+				//title : point.title,
+			});
+			
+			point.infowindow = new google.maps.InfoWindow({
+				content : getInfoWindowHTML(point),
+				//pixelOffset : 15,
+			});
+			
+			SiteData.infowindows.push(point.infowindow);
+			
+			point.marker.addListener('mouseover', function() {
+				
+				for(var __i = 0; __i < SiteData.infowindows.length; __i++) {
+					SiteData.infowindows[__i].close();
+				}
+				
+				point.infowindow.open(omap__map, point.marker);
+				
+			});
+			
+			/*
+			point.marker.addListener('mouseout', function() {
+				//point.infowindow.close();
+			});
+			*/
+			
+			point.marker.addListener('click', function() {
+				point.infowindow.close();
+				window.location.href = point.link;
+			});
+			
+		}, to * 99);
+		
+	};
+	
+	var _j = 0;
+	
+	for(var i in SiteData.projects.residential) {
+		
+		var point = SiteData.projects.residential[i];
+		
+		_j++;
+		
+		if(point.lat && point.lng) {
+			
+			addMarkerToMap(point, _j);
+			
+		}
+		
+	}
+	
+	for(var i in SiteData.projects.commercial) {
+		
+		var point = SiteData.projects.commercial[i];
+		
+		_j++;
+		
+		if(point.lat && point.lng) {
+			
+			addMarkerToMap(point, _j);
+			
+		}
+		
+	}
+	
+	$(window).resize(function() {
+		
+		var el = $(omap__mapElement);
+		var coord = el.attr('data-coord');
+		var _c;
+		
+		if(coord && coord != '') {
+			
+			_c = coord.split(',');
+			
+			_c = {
+				lat : _c[0],
+				lng : _c[1],
+			};
+			
+		} else {
+			
+			_c = center;
+			
+		}
+		
+		google.maps.event.trigger(omap__map, 'resize');
+		omap__map.setCenter(new google.maps.LatLng(_c.lat, _c.lng));
+		
+	});
+	
+	$(document.body).on('click', '.azbn-map-filter-btn', {}, function(event){
+		event.preventDefault();
+		
+		var btn = $(this);
+		//var status = parseInt(btn.attr('data-status-filter') || 0);
+		var status_arr = (btn.attr('data-status-filter') || '0').split(',');
+		
+		status_arr = status_arr.map(function(v){
+			return parseInt(v);
+		});
+		
+		var status_onsale = parseInt(btn.attr('data-status-onsale-filter') || '0');
+		
+		$('.azbn-map-filter-btn').removeClass('is--active');
+		btn.addClass('is--active');
+		
+		omap__objectsByStatus(status_arr, status_onsale);
+		
+	});
+	
+	
+	$(document.body).on('click', '.azbn-map-view-project-btn', {}, function(event){
+		event.preventDefault();
+		
+		var btn = $(this);
+		var project_id = parseInt(btn.attr('data-project-id') || 0);
+		
+		var _c = null;
+		var _z = 16;
+		
+		omap__map.setZoom(_z);
+		
+	});
+	
+	
+}
+
+$(function () {
+	
+	$(document.body).on('shown.bs.modal', '.modal', {}, function(event){
+		event.preventDefault();
+		$(window).trigger('resize');
+	});
+	
+	$(document.body).on('click', '.azbn-project-filter-btn', {}, function(event){
+		event.preventDefault();
+		
+		var btn = $(this);
+		//var status = parseInt(btn.attr('data-status-filter') || 0);
+		var status_arr = (btn.attr('data-status-filter') || '0').split(',');
+		
+		status_arr = status_arr.map(function(v){
+			return parseInt(v);
+		});
+		
+		SS.set('last_tab_viewed', status_arr[0]);
+		//console.log(status_arr[0]);
+		
+		var status_onsale = parseInt(btn.attr('data-status-onsale-filter') || '0');
+		
+		//console.log(status_arr);
+		
+		$('.azbn-project-filter-btn').removeClass('is--active');
+		btn.addClass('is--active');
+		
+		var items = $('.azbn-project-filter-item');//azbn-project-filter-item" data-status-filter
+		
+		if(status_onsale) {
+			
+			items.each(function(index){
+				
+				var item = $(this);
+				
+				var _status = parseInt(item.attr('data-status-onsale-filter'));
+				
+				if(status_onsale == _status && item.is(':hidden')) {
+					
+					item.css({opacity : 1}).fadeIn('fast');
+					
+					/*
+					item.animate({
+						opacity : 1,
+					}, 500, function() {
+						item.show();
+					});
+					*/
+					
+				} else if(status_onsale == _status) {
+					
+					
+					
+				} else {
+					
+					item.css({opacity : 0}).fadeOut('fast');
+					
+				}
+				
+			});
+			
+		} else if(in_array(0, status_arr)) {
+			//console.log(status_arr);
+			items.filter(':hidden').css({opacity : 1}).fadeIn('fast');
+			
+		} else {
+			
+			items.each(function(index){
+				
+				var item = $(this);
+				
+				var _status = parseInt(item.attr('data-status-filter'));
+				
+				if(in_array(_status, status_arr) && item.is(':hidden')) {
+					
+					item.css({opacity : 1}).fadeIn('fast');
+					
+				} else if(in_array(_status, status_arr)) {
+					
+					
+					
+				} else {
+					
+					item.css({opacity : 0}).fadeOut('fast');
+					
+				}
+				
+			});
+			
+		}
+		
+		if(status) {
+			
+			
+			
+		} else {
+			
+			
+			
+		}
+		
+	});
+	
+});
+
+</script>
+<!--
+<div class="modal fade modal-map" id="modal-objacts-map" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-map__dialog">
+		<div class="modal-content modal-map__content">
+			<div class="modal-body modal-map__body" >
+				<button type="button" class="btn-site btn-close modal-map__close modal-close" data-dismiss="modal" aria-hidden="true">
+					<svg class="modal-map__close-rect-block modal-close__rect-block">
+						<rect class="modal-map__close-rect modal-close__rect" x="0" y="0"/>
+					</svg>
+					<svg class="icon-svg icon-cancel" role="img">
+						<use xlink:href="<?=$this->path('img');?>/svg/sprite.svg#cancel"></use>
+					</svg> 
+				</button>				
+				<div class="objacts-map__filter-panel modal-map__filter-panel">
+					<ul class="objacts-map__filter modal-map__filter">
+						<li>
+							<a href="#" class="objacts-map__filter-item modal-map__filter-item is--active azbn-map-filter-btn " data-status-filter="0" title="Все объекты">
+								<span class="objacts-map__filter-icon modal-map__filter-icon"><svg class="icon-svg icon-filter-all" role="img">
+									<use xlink:href="<?=$this->path('img');?>/svg/sprite.svg#filter-all"></use>
+								</svg></span>
+								<span class="objacts-map__filter-name modal-map__filter-name" >Все<br> объекты</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="objacts-map__filter-item modal-map__filter-item azbn-map-filter-btn " data-status-filter="4" data-status-onsale-filter="1" title="Квартиры в продаже">
+								<span class="objacts-map__filter-icon modal-map__filter-icon"><svg class="icon-svg icon-filter-buy" role="img">
+									<use xlink:href="<?=$this->path('img');?>/svg/sprite.svg#filter-buy"></use>
+								</svg></span>
+								<span class="objacts-map__filter-name modal-map__filter-name" >Квартиры<br> в&nbsp;продаже</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="objacts-map__filter-item modal-map__filter-item azbn-map-filter-btn " data-status-filter="1" title="Строящиеся объекты">
+								<span class="objacts-map__filter-icon modal-map__filter-icon"><svg class="icon-svg icon-filter-build" role="img">
+									<use xlink:href="<?=$this->path('img');?>/svg/sprite.svg#filter-build"></use>
+								</svg></span>
+								<span class="objacts-map__filter-name modal-map__filter-name">Строящиеся<br> объекты</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="objacts-map__filter-item modal-map__filter-item azbn-map-filter-btn " data-status-filter="2" title="Объекты, сданные в эксплуатацию">
+								<span class="objacts-map__filter-icon modal-map__filter-icon"><svg class="icon-svg icon-filter-ready" role="img">
+									<use xlink:href="<?=$this->path('img');?>/svg/sprite.svg#filter-ready"></use>
+								</svg></span>
+								<span class="objacts-map__filter-name modal-map__filter-name">Объекты, сданные<br> в эксплуатацию</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<?
+				if((in_array($this->post['id'], array(1), false))){
+					
+				} else {
+				?>
+				<div id="map-google" class="modal-map__map" <?if(is_singular('project')) { ?>data-coord="<?=meta($this->post['id'], 'lat');?>, <?=meta($this->post['id'], 'lng');?>"<? } ?> ></div>
+				<?
+				}
+				?>
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+-->
+	</body>
+</html>

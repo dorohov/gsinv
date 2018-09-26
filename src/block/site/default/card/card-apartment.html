@@ -1,0 +1,49 @@
+<article class="{{block_prefix}}card  {{block_mod}}">
+	<div class="{{block_prefix}}row row  is--wrap  {{block_mod}}">
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--preview">
+			<a href="{{block_link}}" class="{{block_prefix}}preview  {{block_mod}}">
+				<div class="{{block_prefix}}preview-inner  {{block_mod}}">
+					<img src="{{block_preview}}" alt="{{block_heading}}">
+				</div>
+				<div class="{{block_prefix}}bg  {{block_mod}}">
+					<div class="{{block_prefix}}bg-inner  {{block_mod}}">			
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--desc">
+			<div class="{{block_prefix}}desc  {{block_mod}}">
+				<h4 class="{{block_prefix}}heading  {{block_mod}}"><a href="{{block_link}}">{{block_heading}}</a></h4>
+				<div class="{{block_prefix}}heading-small  {{block_mod}}">{{block_heading_small}}</div>
+				<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}">
+					<div class="{{block_prefix}}cols cols  {{block_mod}}  is--info">
+						<div class="{{block_prefix}}elem  {{block_mod}}">Площадь: <span>{{block_area}}</span></div>
+						<div class="{{block_prefix}}elem  {{block_mod}}">Этаж: <span>{{block_floor}}</span></div>
+						<div class="{{block_prefix}}elem  {{block_mod}}">№ квартиры: <span>{{block_number}}</span></div>
+						<div class="{{block_prefix}}elem  is--cost  {{block_mod}}"><span>от {{block_cost}}</span> ₽</div>
+					</div>
+					<div class="{{block_prefix}}cols cols  {{block_mod}}  is--btn">
+						<div class="{{block_prefix}}btn  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/button/link.html"
+								button_prefix="btn-link__" 
+								button_mod="{{block_mod}}"
+								button_link="{{page.building_card}}"
+								button_name="Посмотреть дом" 
+							]]
+						</div>	
+						<div class="{{block_prefix}}btn  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/button/link.html"
+								button_prefix="btn__" 
+								button_mod="{{block_mod}}"
+								button_link="{{page.building_layout_apart}}"
+								button_name="Смотреть квартиру"
+							]]
+						</div>					
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

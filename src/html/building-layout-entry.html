@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body class="is--navbar-bottom"> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll"
+		]] 
+		[[azbntple  
+			tpl="/src/block/site/page/building-layout-entry.html"
+			content_prefix="content-block__"       
+			content_mod="is--building-layout"    
+			block_bread_mod="  "
+			block_bread_level_1="Пер. Рижский, поз.&nbsp;1&nbsp;"
+			block_bread_level_1_link="{{page.building_card}}"
+			block_bread_level_2="Планировки"
+			block_bread_level_2_link="{{page.building_layout}}"
+			block_heading_mod="is--page-heading"
+			block_heading_level="h1"
+			block_heading="Подъезд 1"  
+			block_heading_bg="{{url-path-img}}/temp/bg-building.jpg"  
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+	</body>
+</html>

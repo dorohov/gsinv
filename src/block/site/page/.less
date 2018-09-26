@@ -1,0 +1,557 @@
+.content-block__{
+	&panel{	
+		position: relative;
+		overflow: hidden;
+		&.is--hidden{			
+			@media @media-point-screen {
+				overflow: hidden;
+			}
+		}
+		&.is--bg{
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		&.is--objacts{
+			display: flex;
+			@media @media-point-device {
+				flex-wrap: wrap;
+			}
+		}
+		&.is--news-index{
+			background-color: fadeout(#8D969D, 90%);
+		}
+		&.is--404{
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+	}
+	&container{	
+		position: relative;
+		z-index: 5;
+		@media print{padding: 0!important}		
+		padding-top: 40px;
+		padding-bottom: 40px;
+		@media @media-point-screen {
+			padding-top: 5.2vw;
+			padding-bottom: 3.7vw;
+		}
+		&.is--default-page{
+			@media @media-point-screen {
+				max-width: 1035px;
+			}
+		}
+		&.is--full{
+			@media @media-point-smart {
+				min-height: ~"calc(100vh - @{navbar-xs})";
+			}
+			@media @media-point-sm {
+				min-height: ~"calc(100vh - @{navbar-sm} - @{footer-device-sm-p})";
+			}
+			@media @media-point-md1 {
+				min-height: ~"calc(100vh - @{navbar-sm} - @{footer-device-sm-l})";
+			}
+			@media @media-point-screen {					
+				min-height: ~"calc(100vh - @{navbar-screen} - 130px -  @{footer-screen})";
+			}
+			@media @media-point-md2 {
+				min-height: ~"calc(100vh - @{navbar-md} - @{footer-screen-md})";
+			}
+			@media @media-point-lg {
+				//min-height: ~"calc(100vh - @{navbar-lg} - @{footer-screen-lg} )"; 
+			}
+			@media @media-point-xxl {
+				//min-height: ~"calc(100vh - @{navbar-xxl} -  @{footer-screen-xxl})"; 
+			}			
+			body.is--navbar-bottom &{
+				@media @media-point-sm {
+					min-height: ~"calc(100vh - @{navbar-sm} - @{footer-device-sm-p} - @{navbar-bottom})";
+				}
+				@media @media-point-md1 {
+					min-height: ~"calc(100vh - @{navbar-sm} - @{footer-device-sm-l} -  @{navbar-bottom})";
+				}
+				@media @media-point-md2 {	
+					min-height: ~"calc(100vh - @{navbar-md} - @{footer-screen-md} - @{navbar-bottom-tabs} - @{navbar-bottom})"; 
+				}
+			}
+		}
+		&.is--full-building{
+			@media @media-point-smart {
+				min-height: ~"calc(100vh - @{navbar-xs})";
+			}
+			@media @media-point-sm {
+				min-height: ~"calc(100vh - @{navbar-sm} - @{footer-device-sm-p})";
+			}
+			@media @media-point-md1 {
+				min-height: ~"calc(100vh - @{navbar-sm} - @{footer-device-sm-l})";
+			}
+			@media @media-point-md2 {
+				min-height: ~"calc(100vh - @{navbar-md} - 15.02vw - @{footer-screen-md})";
+			}		
+			@media @media-point-screen-lg {					
+				min-height: ~"calc(100vh - @{navbar-screen} - 10.9vw - 4vw -  @{footer-screen})";
+			}	
+			body.is--navbar-bottom &{
+				@media @media-point-sm {
+					min-height: ~"calc(100vh - @{navbar-sm} - 145px - @{footer-device-sm-p} - @{navbar-bottom-tabs})";
+				}
+				@media @media-point-md1 {
+					min-height: ~"calc(100vh - @{navbar-sm} - 145px - @{footer-device-sm-l} -  @{navbar-bottom-tabs})";
+				}
+				@media @media-point-md2 {	
+					min-height: ~"calc(100vh - @{navbar-md} - @{footer-screen-md}  - 15.02vw - @{navbar-bottom-tabs})"; 
+				}
+			}
+		}
+		&.is--noheight{
+			min-height: inherit;
+		}
+		&.is--nopadding{
+			padding-top: 0;
+			padding-bottom: 0;
+			min-height: inherit;
+		}
+		&.is--nopadding-top{
+			padding-top: 0;
+		}
+		&.is--nopadding-bottom{
+			padding-bottom: 0;
+		}
+		&.is--overflow{
+			overflow: hidden;
+			position: relative;
+		}
+		&.is--padding-top{
+			padding-top: 20px;
+		}
+		//index
+		&.is--building-index{
+			padding-bottom: 60px;
+			@media @media-point-screen {
+				padding-top: 5.8vw;
+				padding-bottom: 5.8vw;
+			}
+		}
+		&.is--news-index{
+			padding-bottom: 60px;
+			@media @media-point-screen {
+				padding-top: 6vw;
+				padding-bottom: 5.4vw;
+			}
+		}
+		&.is--404{
+			@media @media-point-smart {
+				min-height: ~"calc(100vh - @{navbar-xs})";
+			}
+			@media @media-point-sm {
+				min-height: ~"calc(100vh - @{navbar-sm} - @{footer-device-sm-p})";
+			}
+			@media @media-point-md1 {
+				min-height: ~"calc(100vh - @{navbar-sm} - @{footer-device-sm-l})";
+			}
+			@media @media-point-screen {
+				padding-top: ~"calc(5.2vw + @{navbar-screen})";				
+				min-height: ~"calc(100vh -  @{footer-screen})";
+			}
+			@media @media-point-md2 {
+				min-height: ~"calc(100vh - @{footer-screen-md})";
+			}	
+		}
+	}
+	&elem{
+		margin-bottom: 35px;
+		@media @media-point-screen {
+			margin-bottom: 3.8vw;
+		}
+		&.is--posr{
+			position: relative;
+		}
+		&.is--hidden{
+			overflow: hidden;
+		}
+		&.is--center{
+			text-align: center;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&.is--xl{
+			@media @media-point-screen {
+				margin-bottom: 5.9vw;
+			}
+		}
+		&.is--lg{
+			margin-bottom: 25px;
+			@media @media-point-screen {
+				margin-bottom: 2.5vw;
+			}
+		}
+		&.is--sm{
+			margin-bottom: 30px;
+			@media @media-point-screen {
+				margin-bottom: 2.7vw;
+			}
+		}
+		&.is--xs{
+			margin-bottom: 25px;			
+		}
+		&.is--building-page{
+			@media @media-point-screen {
+				margin-bottom: 5vw;
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		&.is--404{
+			background-color: fadeout(@white, 20%);
+			padding: 35px 25px;
+			@media @media-point-notsmart {
+				margin-top: 4.5vw;
+				padding: 2.8vw 5.3vw;
+			}	
+			@media @media-point-screen {				
+				margin-left: auto;
+				max-width: 715px;
+				min-width: 495px;
+				width: 40vw;
+			}
+		}
+	}
+	&row{
+	}		  
+	&cols{
+		&.is--elem-1{
+			.makeCols(12, 12);
+		}
+		&.is--elem-2{
+			&.is--gallery-card{
+				.makeCols(12, 12);
+				@media @media-point-xs {
+					.makeCols(6, 12);
+				}
+				@media @media-point-sm {
+					.makeCols(4, 12);
+				}
+				@media @media-point-md {
+					.makeCols(4, 12);
+				}
+				@media @media-point-screen-lg {
+					.makeCols(2, 12);
+				}
+			}
+		}
+		&.is--elem-3{
+			.makeCols(12, 12);
+			@media @media-point-xs {
+				.makeCols(6, 12);
+			}
+			@media @media-point-tablet {
+				.makeCols(6, 12);
+			}
+			@media @media-point-screen {
+				.makeCols(4, 12);
+			}
+		}
+		&.is--elem-4{
+			.makeCols(12, 12);
+			@media @media-point-xs {
+				.makeCols(6, 12);
+			}
+			@media @media-point-sm {
+				.makeCols(6, 12);
+			}
+			@media @media-point-md {
+				.makeCols(3, 12);
+			}
+			@media @media-point-screen {
+				.makeCols(3, 12);
+			}
+		}
+		&.is--elem-6{
+			.makeCols(12, 12);
+			@media @media-point-screen {
+				.makeCols(6, 12);
+			}
+		}
+		&.is--mortgage-page{
+			&.is--note{
+				.makeCols(12, 12);
+				@media @media-point-screen {
+					.makeCols(8, 12);
+					padding-right: ~"calc(15px + 2vw)";
+				}
+			}
+			&.is--preview{
+				.makeCols(12, 12);
+				@media @media-point-screen {
+					.makeCols(4, 12);
+				}
+			}
+			&.is--bank{
+				.makeCols(6, 12);
+				@media @media-point-tablet {
+					.makeCols(3, 12);
+				}
+				@media @media-point-screen {
+					.makeCols(6, 12);
+				}
+			}
+		}
+		&.is--building-layout{
+			&.is--plan{
+				.makeCols(12, 12);
+				@media @media-point-screen {
+					.makeCols(8, 12);
+				}
+			}
+			&.is--note{
+				.makeCols(12, 12);
+				@media @media-point-device {
+					order: -1;
+				}
+				@media @media-point-screen {
+					.makeCols(4, 12);
+				}
+				@media @media-point-xxl {
+					.makeCols(3.5, 12);
+					.makeColsOffset(0.5, 12);
+				}
+			}
+		}
+		&.is--apartment{ 
+			&.is--filter{
+				.makeCols(12, 12);
+				@media @media-point-screen-lg {
+					.makeCols(4, 12);
+				}
+			}  
+			&.is--list{
+				.makeCols(12, 12);
+				@media @media-point-screen-lg {
+					.makeCols(8, 12);
+				}
+			}
+		}
+		&.is--about{
+			&.is--adv{
+				.makeCols(12, 12);
+				@media @media-point-screen {
+					.makeCols(4, 12);
+				}
+			}
+			&.is--left{
+				.makeCols(12, 12);
+				@media @media-point-screen-lg {
+					.makeCols(8, 12);
+				}
+			}
+			&.is--right{
+				@media @media-point-tablet-md {
+					.makeCols(6, 12);
+				}
+				@media @media-point-screen-lg {
+					.makeCols(4, 12);
+				}
+				@media @media-point-device-lg {
+					&.is--order-1{
+						order: -1;
+						.makeCols(12, 12);
+					}
+				}
+			}
+			@media @media-point-screen-lg {				
+				&.is--pad-right{
+					padding-right: ~"calc(15px + 1.7vw)";
+				}				
+				&.is--pad-left{
+					padding-left: ~"calc(15px + 1.7vw)";
+				}
+			}
+		}
+		&.is--news-index{
+			@media @media-point-screen {
+				&:nth-child(4){
+					display: none;
+				}				
+			}
+		}
+	}
+	&heading{
+		h2&{
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			@media @media-point-screen {
+				margin-bottom: 2.3vw;
+			}
+		}
+		h3&{
+			margin-bottom: 30px;
+			@media @media-point-screen {
+				margin-bottom: 1.8vw;
+			}			
+		}
+		h4&{
+			margin-bottom: 15px;
+			@media @media-point-screen {
+				margin-bottom: 1.3vw;
+			}
+		}
+		h5&{
+			font-weight: 700;
+			margin-bottom: 15px;
+			@media @media-point-screen {
+				margin-bottom: 1vw;
+			}
+		}
+		&.is--center{
+			text-align: center;
+		}
+		&.is--about{
+			h2&{
+				margin-bottom: 20px;
+			}
+			h4&{
+				font-family: @b-ff;
+				font-weight: 400;
+				@media @media-point-screen {
+					margin-bottom: 2.5vw;
+				}
+			}
+		}
+	}
+	&text{
+		&.is--center{
+			text-align: center;
+		}
+		&.is--about{
+			&.text__block{
+				h4{
+					color: @b-color-h;
+					text-transform: uppercase;
+					margin-bottom: 15px;
+				}
+			}
+		}
+		&.is--404{
+			.calcFontSize(17, 23, 320, 1680);
+			.calcLineHeight(23, 28, 320, 1680);
+			div, p{
+				letter-spacing: 1px;
+			}
+		}
+	}
+	&preview{
+	}
+	&slick{
+	}
+	&slick-item{
+		&.is--gallery{
+			padding: 0 15px;
+		}
+	}
+	&btn{
+		padding-top: 35px;
+		@media @media-point-screen-lg {
+			padding-top: 2.7vw;
+		}
+		&.is--pt0{
+			padding-top: 0;
+		}
+		&.is--portfolio-index{
+			@media @media-point-screen-lg {
+				padding-top: 4vw;
+			}
+		}
+		&.is--reviews-index{
+			@media @media-point-screen-lg {
+				padding-top: 4.3vw;
+			}
+		}
+		&.is--center{
+			text-align: center;
+		} 
+	}
+	&map{
+		&.is--building-map{
+			height: 300px;
+			@media @media-point-sm {
+				height: ~"calc(100vh - @{navbar-sm} - 145px - @{footer-device-sm-p} - @{navbar-bottom-tabs})";
+			}
+			@media @media-point-md1 {
+				height: ~"calc(100vh - @{navbar-sm} - 145px - @{footer-device-sm-l} -  @{navbar-bottom-tabs})";
+			}
+			@media @media-point-md2 {	
+				height: ~"calc(100vh - @{navbar-md} - @{footer-screen-md}  - 15.02vw - @{navbar-bottom-tabs})"; 
+			}		
+			@media @media-point-screen-lg {					
+				height: ~"calc(100vh - @{navbar-screen} - 10.9vw - 4vw -  @{footer-screen})";
+			}
+		}
+		&.is--objacts{
+			width: 100%;
+			flex-grow: 1;	
+			@media @media-point-smart {
+				min-height: ~"calc(100vh - @{navbar-xs})";
+			}
+			@media @media-point-sm {
+				min-height: ~"calc(100vh - @{navbar-sm} - 128px - @{footer-device-sm-p})";
+			}
+			@media @media-point-md1 {
+				min-height: ~"calc(100vh - @{navbar-sm} - 128px - @{footer-device-sm-l})";
+			}		
+			@media @media-point-screen {					
+				min-height: ~"calc(100vh - @{navbar-screen} - 130px -  @{footer-screen})";
+				html.msie &{
+					width: 75vw;
+				}
+			}
+			@media @media-point-md2 {
+				min-height: ~"calc(100vh - @{navbar-md} - @{footer-screen-md})";
+			}
+		}
+	}
+	&map-filter{
+		&.is--objacts{
+			background-color: @white;
+			padding: 25px 15px;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			@media @media-point-device {
+				order: -1;
+			}
+			@media @media-point-screen {
+				display: block;
+				min-width: 310px;
+				width: 25vw;
+				max-width: 350px;
+				padding: 4.3vw 0;
+			}
+		}
+	}
+	&map-filter{
+		&.is--objacts{
+			flex-grow: 1;
+			margin-right: 15px;
+			@media @media-point-screen {
+				margin-right: 0;
+			}
+		}
+	}
+	&gmap-popover{
+		@media @media-point-screen {
+			padding: 1.4vw;
+		}
+	}
+	&gmap-heading{
+		.heading5();
+		font-family: @b-ff-2;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		margin-bottom: 15px;
+	}
+	&gmap-btn{}
+}

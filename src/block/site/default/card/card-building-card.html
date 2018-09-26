@@ -1,0 +1,93 @@
+<div class="{{block_prefix}}card  {{block_mod}}  {{block_active}}">	
+	<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}">
+		<div class="{{block_prefix}}cols cols  is--preview  {{block_mod}}">
+			<div class="{{block_prefix}}preview-group  {{block_mod}}">
+				<a href="{{block_preview_fancy}}" data-fancybox="gallery" class="{{block_prefix}}preview  {{block_mod}}">	
+					<img src="{{block_preview}}" alt="{{block_heading}}" class="img-responsive">
+					<div class="{{block_prefix}}view  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-gallery" ]]</div>
+				</a>
+				<a href="{{block_preview_fancy}}" data-fancybox="gallery" class="{{block_prefix}}preview  {{block_mod}}"></a>
+
+				<div class="{{block_prefix}}elem-group  is--num  {{block_mod}}">
+					<div class="{{block_prefix}}row row is--gutter  is--wrap  is--num  {{block_mod}}">
+						<div class="{{block_prefix}}cols cols  is--num  {{block_mod}}">
+							<div class="{{block_prefix}}elem  is--num  {{block_mod}}">
+								<div class="{{block_prefix}}elem  is--num-number  {{block_mod}}">
+									9
+								</div>
+								<div class="{{block_prefix}}elem  is--num-name  {{block_mod}}">
+									жилых<br> этажей
+								</div>
+							</div>
+						</div>
+						<div class="{{block_prefix}}cols cols  is--num  {{block_mod}}">
+							<div class="{{block_prefix}}elem  is--num  {{block_mod}}">
+								<div class="{{block_prefix}}elem  is--num-number  {{block_mod}}">
+									7
+								</div>
+								<div class="{{block_prefix}}elem  is--num-name  {{block_mod}}">
+									подъездов<br> в доме
+								</div>
+							</div>
+						</div>
+						<div class="{{block_prefix}}cols cols  is--num  {{block_mod}}">
+							<div class="{{block_prefix}}elem  is--num  {{block_mod}}">
+								<div class="{{block_prefix}}elem  is--num-number  {{block_mod}}">
+									60
+								</div>
+								<div class="{{block_prefix}}elem  is--num-name  {{block_mod}}">
+									парковочных<br> мест
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="{{block_prefix}}cols cols  is--desc  {{block_mod}}">			
+			<h2 class="{{block_prefix}}heading  {{block_mod}}">{{block_heading}}</h2>
+			<div class="{{block_prefix}}elem  is--desc  {{block_mod}}">
+				<div class="{{block_prefix}}elem  is--heading  {{block_mod}}">
+					Ввод в эксплуатацию:
+				</div>
+				{{block_start}}
+			</div>
+			<div class="{{block_prefix}}elem  is--desc  {{block_mod}}">
+				<div class="{{block_prefix}}elem  is--heading  {{block_mod}}">
+					Квартиры:
+				</div>
+				{{block_apartments}}
+			</div>
+			<div class="{{block_prefix}}elem  is--desc  {{block_mod}}">
+				<div class="{{block_prefix}}elem  is--heading  {{block_mod}}">
+					Тип дома:
+				</div>
+				{{block_type}}
+			</div>
+			<div class="{{block_prefix}}elem  is--desc  is--cost  {{block_mod}}">
+				<div class="{{block_prefix}}elem  is--heading  {{block_mod}}">
+					Квартиры от:
+				</div>
+				<div class="{{block_prefix}}elem  is--cost-num  {{block_mod}}">{{block_cost}} ₽</div>
+			</div>
+			<div class="{{block_prefix}}elem  is--desc  is--link  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/button/link.html"
+					button_prefix="btn-link__" 
+					button_mod="  "
+					button_link="{{page.building_docs}}"
+					button_name="Документация" 
+				]]
+			</div>
+			<div class="{{block_prefix}}elem  is--desc  is--btn  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/button/link.html"
+					button_prefix="btn__" 
+					button_mod="  "
+					button_link="{{page.building_layout}}"
+					button_name="Выбрать квартиру в этом доме"
+				]]
+			</div>
+		</div>
+	</div>
+</div>

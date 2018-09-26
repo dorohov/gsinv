@@ -1,0 +1,31 @@
+<div class="{{block_prefix}}block  {{block_mod}}  {{block_active}}">	
+	<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}">
+		<div class="{{block_prefix}}cols cols  is--note  {{block_mod}}">	
+			<h4 class="{{block_prefix}}heading  {{block_mod}}">{{block_heading}}</h4>		
+			<div class="{{block_prefix}}text  text__block  {{block_mod}}">
+				{{block_note}}
+			</div>
+		</div>
+		<div class="{{block_prefix}}cols cols  is--preview  {{block_mod}}">
+			<h5 class="{{block_prefix}}heading-small  {{block_mod}}">Фотографии хода строительства</h5>
+			<div class="{{block_prefix}}elem  is--album  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/card/card-gallery-album.html"
+					block_prefix="card-item__" 
+					block_mod="is--gallery-album"
+					block_link="{{page.building_gallery_card}}"
+					block_preview="http://via.placeholder.com/400x400"
+					block_heading="Август 2018"
+					block_heading_small="+10 фото"
+				]]
+			</div>
+			[[azbntple 
+				tpl="/src/block/site/default/button/link.html"
+				button_prefix="btn__" 
+				button_mod="{{block_mod}}"
+				button_link="{{page.building_gallery}}"
+				button_name="Больше фото"
+			]]
+		</div>
+	</div>
+</div>

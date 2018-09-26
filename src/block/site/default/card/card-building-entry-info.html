@@ -1,0 +1,35 @@
+<div class="{{block_prefix}}block  {{block_mod}}">	
+	<h2 class="{{block_prefix}}heading  {{block_mod}}">
+		{{block_heading}}
+	</h2>
+	<div class="{{block_prefix}}elem-group  is--range  {{block_mod}}">
+		<div class="{{block_prefix}}elem  is--label  {{block_mod}}">Этаж:</div>	
+		<input type="text" class="js-range-slider" 
+			data-min="1" 
+			data-max="17"
+			data-from="1">
+	</div>
+	<div class="{{block_prefix}}elem-group  is--info  {{block_mod}}  azbn7__layout-panel  is--hidden">
+		<div class="{{block_prefix}}elem  is--heading  {{block_mod}}">
+			На этаже:
+		</div>
+		<div class="{{block_prefix}}elem  is--card  {{block_mod}}">
+			Свободно: <span><i class="azbn7__ap_free">2</i> квартиры</span>
+		</div>
+		<div class="{{block_prefix}}elem  is--card  {{block_mod}}">
+			Продано: <span><i class="azbn7__ap_sale">1</i> квартира</span>
+		</div>
+		<div class="{{block_prefix}}elem  is--card  {{block_mod}}">
+			Забронировано: <span><i class="azbn7__ap_reserv">2</i> квартиры</span>
+		</div>
+		<div class="{{block_prefix}}elem  is--btn  {{block_mod}}">
+			[[azbntple 
+				tpl="/src/block/site/default/button/link.html"
+				button_prefix="btn__" 
+				button_mod="  "
+				button_link="{{block_link}}"
+				button_name="Перейти на этаж"
+			]]
+		</div>
+	</div>
+</div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body class="is--navbar-bottom"> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll"
+		]] 
+		[[azbntple  
+			tpl="/src/block/site/page/mortgage.html"
+			content_prefix="content-block__"       
+			content_mod="is--mortgage-page"    
+			block_bread_mod="  "
+			block_heading_mod="is--page-heading"
+			block_heading_level="h1"
+			block_heading="Оплата наличными"
+			block_heading_bg="{{url-path-img}}/temp/bg-mortgage.jpg"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/form/block.html" 
+			block_prefix="form-panel__"
+			block_mod="is--block"
+			block_bg="{{url-path-img}}/temp/bg-form-apartment.jpg"
+			form_prefix="form__"
+			form_id="f_apartment"
+			form_mod="is--block" 
+			form_color="  "
+			form_heading="Подобрать квартиру"
+			form_heading_small="Наш менеджер поможет подобрать квартиру на выгодных условиях,<br> собрать все документы и получить одобрение по ипотеке"
+			form_heading_mod="is--form-block"
+			form_btn_name="Отправить"
+			form_btn_mod="is--sm"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+	</body>
+</html>

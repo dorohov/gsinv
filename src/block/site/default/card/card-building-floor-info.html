@@ -1,0 +1,43 @@
+<div class="{{block_prefix}}block  {{block_mod}}">	
+	<h2 class="{{block_prefix}}heading  {{block_mod}}">
+		{{block_heading}}
+	</h2>
+	<div class="{{block_prefix}}elem-group  is--legend  {{block_mod}}">
+		<div class="{{block_prefix}}elem  is--label  {{block_mod}}">Условные обозначения:</div>
+		<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}">
+			<div class="{{block_prefix}}cols cols  {{block_mod}}">
+				<div class="{{block_prefix}}elem  is--legend  is--free  {{block_mod}}">- свободна</div>
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}">
+				<div class="{{block_prefix}}elem  is--legend  is--bay  {{block_mod}}">- продана</div>				
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}">
+				<div class="{{block_prefix}}elem  is--legend  is--reserv  {{block_mod}}">- забронирована</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}elem-group  is--info  {{block_mod}}  azbn7__layout-panel  is--hidden">
+		<div class="{{block_prefix}}elem  is--heading  is--lg  {{block_mod}}">
+			Выбранная вами квартира:
+		</div>
+		<div class="{{block_prefix}}elem  is--status  {{block_mod}}">
+			<span class="azbn7__status  is--free">Свободна</span>
+		</div>
+		<div class="{{block_prefix}}elem  is--card  {{block_mod}}">
+			Площадь: <span><i class="azbn7__ap_area">2</i> м<sup>2</sup></span>
+		</div>
+		<div class="{{block_prefix}}elem  is--card  {{block_mod}}">
+			№ квартиры: <span><i class="azbn7__ap_number">1</i></span>
+		</div>
+		<div class="{{block_prefix}}elem  is--btn  {{block_mod}}">
+			[[azbntple 
+				tpl="/src/block/site/default/button/link.html"
+				button_prefix="btn__" 
+				button_mod="  "
+				button_link="{{block_link}}"
+				button_name="Смотреть квартиру"
+			]]
+		</div>
+	</div>
+</div>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body class="is--index-page"> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll  is--index"
+		]] 
+		[[azbntple 
+			tpl="/src/block/site/default/header/panel.html"
+			block_prefix="header-block__"
+			block_heading="ООО «ЖИЛСТРОЙ-Инвест»"
+			block_heading_small="Строим там, где хочется жить: лучшие локации, цена и планировки"
+			block_bg="{{url-path-img}}/temp/bg-index-header.jpg"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-building.html"
+			content_prefix="content-block__"  
+			content_mod="is--building-index"
+			content_id="building-block"
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading="Квартиры, в которые уже можно въехать"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-news.html"
+			content_prefix="content-block__"   
+			content_mod="is--news-index"
+			content_id="news-block"
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading="Новости для покупателей"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/form/block.html" 
+			block_prefix="form-panel__"
+			block_mod="is--block  is--index"
+			block_bg="{{url-path-img}}/temp/bg-form-index.jpg"
+			form_prefix="form__"
+			form_id="f_apartment"
+			form_mod="is--block" 
+			form_color="  "
+			form_heading="Хотите квартиру по вашим параметрам?"
+			form_heading_small="Заполните форму и наши менеджеры предложат вам наилучшие варианты"
+			form_heading_mod="is--form-block  is--index"
+			form_btn_name="Отправить"
+			form_btn_mod="is--sm"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]		
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+	</body>
+</html>

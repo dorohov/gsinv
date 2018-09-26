@@ -1,0 +1,68 @@
+[[azbntple 
+	tpl="/src/block/site/default/page-header/block-level2.html"
+	block_prefix="page-header__" 
+	block_mod="{{block_heading_mod}}"
+	block_heading_level="{{block_heading_level}}"
+	block_heading="{{block_heading}}"
+	block_bread_mod="{{block_bread_mod}}"
+	block_bread_level_1="{{block_bread_level_1}}"
+	block_bread_level_1_link="{{block_bread_level_1_link}}"
+	block_heading_bg="{{block_heading_bg}}"
+]]	
+<main class="{{content_prefix}}panel">
+	[[azbntple 
+		tpl="/src/block/site/default/tabs/panel-building.html"
+		block_prefix="tabs__" 
+		block_mod="  "
+	]]
+	<div class="{{content_prefix}}container container  is--full-building">
+		<div class="{{content_prefix}}elem">
+			<div class="{{content_prefix}}row row  is--gutter  is--wrap">
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-4">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-gallery-album.html"
+						block_prefix="card-item__" 
+						block_mod="is--gallery-album"
+						block_link="{{page.building_gallery_card}}"
+						block_preview="http://via.placeholder.com/400x400"
+						block_heading="Август 2018"
+						block_heading_small="+10 фото"
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-4">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-gallery-album.html"
+						block_prefix="card-item__" 
+						block_mod="is--gallery-album"
+						block_link="{{page.building_gallery_card}}"
+						block_preview="http://via.placeholder.com/400x400"
+						block_heading="Июль 2018"
+						block_heading_small="+10 фото"
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-4">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-gallery-album.html"
+						block_prefix="card-item__" 
+						block_mod="is--gallery-album"
+						block_link="{{page.building_gallery_card}}"
+						block_preview="http://via.placeholder.com/400x400"
+						block_heading="Июнь 2018"
+						block_heading_small="+10 фото"
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-4">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-gallery-album.html"
+						block_prefix="card-item__" 
+						block_mod="is--gallery-album"
+						block_link="{{page.building_gallery_card}}"
+						block_preview="http://via.placeholder.com/400x400"
+						block_heading="Май 2018"
+						block_heading_small="+10 фото"
+					]]
+				</div>
+			</div>
+		</div>
+	</div>
+</main> 

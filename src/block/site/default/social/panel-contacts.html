@@ -1,0 +1,35 @@
+<div class="{{block_prefix}}block">
+	<div class="{{block_prefix}}row row  {{block_mod}}">
+		<div class="{{block_prefix}}cols cols  is--left  {{block_mod}}">
+			<div class="{{block_prefix}}elem  {{block_mod}}">
+				<div class="{{block_prefix}}label  {{block_mod}}">Адрес:</div>
+				<a href="tel:{{contacts.phone_tel}}" class="{{block_prefix}}item   {{block_mod}}">{{contacts.address}}</a>
+			</div>
+			<div class="{{block_prefix}}elem  {{block_mod}}">
+				<div class="{{block_prefix}}label  {{block_mod}}">Телефон:</div>
+				<a href="tel:{{contacts.phone_tel}}" class="{{block_prefix}}item   {{block_mod}}">{{contacts.phone}}</a>
+			</div>
+			<div class="{{block_prefix}}elem  {{block_mod}}">
+				<div class="{{block_prefix}}label  {{block_mod}}">E-mail:</div>
+				<a href="mailto:{{contacts.email}}" class="{{block_prefix}}item   {{block_mod}}">{{contacts.email}}</a>
+			</div>
+		</div>
+		<div class="{{block_prefix}}cols cols  is--right  {{block_mod}}">
+			<div class="{{block_prefix}}elem  {{block_mod}}">
+				<div class="{{block_prefix}}label  {{block_mod}}">Пн-Пт:</div>
+				<div class="{{block_prefix}}item   {{block_mod}}">{{contacts.clock_week}}
+				</div>
+			</div>
+			<div class="{{block_prefix}}elem  {{block_mod}}">
+				<div class="{{block_prefix}}label  {{block_mod}}">Сб:</div>
+				<div class="{{block_prefix}}item   {{block_mod}}">{{contacts.clock_sat}}
+				</div>
+			</div>
+			<div class="{{block_prefix}}elem  {{block_mod}}">
+				<div class="{{block_prefix}}label  {{block_mod}}">Вс:</div>
+				<div class="{{block_prefix}}item   {{block_mod}}">{{contacts.clock_sun}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
