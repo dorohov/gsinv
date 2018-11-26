@@ -1,0 +1,42 @@
+	/*.go-to-top {
+		position:fixed;
+		opacity:0;
+		z-index:-1;
+		bottom:120%;
+		right:5%;
+		content:'';
+		display:inline-block;
+		width:1px;
+		height:1px;
+		#fe.brep();
+		#fe.bpos();
+		//#fe.bi('go-to-top.png');
+		text-decoration:none;
+		
+		transition:all 0.999s ease;
+		@media @media-size-xs{display: none;}
+		&.active {
+			width:65px;
+			height:65px;
+			padding-bottom: 15px;
+			background: @aquamarine-mod url('@{url-path-img}/icon/icon-up.png') no-repeat center 20%;
+			box-shadow: 2px 2px 5px fadeout(@black, 75%);
+			bottom:10%;
+			opacity:1;
+			z-index:15;
+			
+			&:hover {
+				transform:scale(1.2);
+			}
+			span{
+				position: absolute;
+				bottom: 5px;
+				width: 100%;
+				left: 0;
+				text-align: center;
+				color: @white;
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+	}*/

@@ -120,6 +120,37 @@ a{
 		font-weight: 900;
 	}
 }
+.go-to-top{
+	display: none;
+	@media @media-point-notsmart {
+		display: block;
+	}
+	.btn-clearfix();
+	width: 49px;
+	height: 49px;
+	padding: 5px;
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+	left: 10px;
+	opacity: 0;
+	background-color: @yellow;
+	color: @white;
+	transition: @trs-site;
+	//transform: rotate(-90deg);
+	&.active{
+		opacity: 1;
+		bottom: 15%;
+		@media @media-point-tablet {
+			bottom: 17.5%;
+		}
+	}
+	&:hover{
+		//color: @white;
+		background-color: @yellow-light;
+	}
+	
+}
 /*
 ._czr__loader{
 	position: fixed;
